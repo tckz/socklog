@@ -10,10 +10,12 @@ socklog forward TCP port to another ADDR:PORT and dump stream.
   ```
   socklog --bind 0.0.0.0:8100 --dest 10.0.0.1:80
   ```
+
 * Control code is not masked
   ```
   socklog --bind 0.0.0.0:8100 --dest 10.0.0.1:80 --mask=false
   ```
+
 * Dump stream to the file instead of stdout.
   ```
   socklog --bind 0.0.0.0:8100 --dest 10.0.0.1:80 --out /path/to/file
